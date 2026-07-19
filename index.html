@@ -54,26 +54,14 @@
         </div>
     </nav>
 
-    <!-- Framed Iframe Container -->
-    <main class="flex-grow w-full bg-[#111111] relative flex flex-col">
-        <!-- Wrapper to perfectly align width with Navbar -->
-        <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 py-4 sm:py-6 lg:py-8 flex-grow flex flex-col">
-            
-            <!-- Pure Black Border Wrapper -->
-            <div class="w-full flex-grow border-[6px] sm:border-[10px] border-black rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl relative bg-black">
-                <!-- 
-                  Using an iframe that takes up 100% of the framed height and width.
-                  'allow' attributes ensure if SuperProfile needs permissions (like clipboard or payments), it functions correctly. 
-                -->
-                <iframe 
-                    src="https://superprofile.bio/bookings/tradingwithsujay?sessionId=69668b58555b0100135d6056" 
-                    class="absolute top-0 left-0 w-full h-full border-none"
-                    title="Book a 1-on-1 Session with Trading With Sujay"
-                    allow="payment"
-                ></iframe>
-            </div>
-            
-        </div>
+    <!-- Full Page Iframe Container -->
+    <main class="flex-grow w-full relative">
+        <iframe 
+            src="https://superprofile.bio/bookings/tradingwithsujay?sessionId=69668b58555b0100135d6056" 
+            class="absolute top-0 left-0 w-full h-full border-none"
+            title="Book a 1-on-1 Session with Trading With Sujay"
+            allow="payment"
+        ></iframe>
     </main>
 
 </body>
