@@ -1,1 +1,80 @@
-<div id="booking-embed" data-src="https://superprofile.bio/bookings/tradingwithsujay?all&type=embedBooking&embedBgColor=E95400"></div><script id='cosmofeed-embed-booking' src='https://cdn.cosmofeed.com/assets/embed/booking-embed.js'></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading With Sujay | 1-on-1 Session</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#0a0a0a',
+                            dark: '#171717',
+                            yellow: '#facc15',
+                            red: '#ef4444',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e7eb;
+            /* Prevent scrolling on the body so only the iframe scrolls */
+            overflow: hidden; 
+        }
+        .font-serif-heading {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            letter-spacing: -0.02em;
+        }
+    </style>
+</head>
+<body class="h-screen w-screen flex flex-col antialiased selection:bg-brand-yellow selection:text-black">
+
+    <!-- Navigation Bar -->
+    <nav class="w-full bg-brand-black border-b border-white/10 shrink-0 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
+            
+            <!-- Brand Name -->
+            <a href="#" class="font-serif-heading text-lg sm:text-xl font-bold tracking-tight text-white flex items-center gap-1.5 sm:gap-2 uppercase">
+                Trading With <span class="text-brand-yellow">Sujay</span>
+            </a>
+            
+            <!-- YouTube Link -->
+            <a href="https://youtube.com/@tradingwithsujay" target="_blank" class="text-white hover:text-brand-red transition-colors flex items-center gap-2 text-xs sm:text-sm font-bold uppercase tracking-wide bg-white/5 hover:bg-white/10 px-3 py-2 sm:px-4 sm:py-2 rounded-none border border-white/10">
+                <i class="fa-brands fa-youtube text-brand-red text-base"></i> <span class="hidden sm:inline">YT Channel</span><span class="sm:hidden">YouTube</span>
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- Framed Iframe Container -->
+    <main class="flex-grow w-full bg-[#111111] relative flex flex-col">
+        <!-- Wrapper to perfectly align width with Navbar -->
+        <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 py-4 sm:py-6 lg:py-8 flex-grow flex flex-col">
+            
+            <!-- Pure Black Border Wrapper -->
+            <div class="w-full flex-grow border-[6px] sm:border-[10px] border-black rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl relative bg-black">
+                <!-- 
+                  Using an iframe that takes up 100% of the framed height and width.
+                  'allow' attributes ensure if SuperProfile needs permissions (like clipboard or payments), it functions correctly. 
+                -->
+                <iframe 
+                    src="https://superprofile.bio/bookings/tradingwithsujay?sessionId=69668b58555b0100135d6056" 
+                    class="absolute top-0 left-0 w-full h-full border-none"
+                    title="Book a 1-on-1 Session with Trading With Sujay"
+                    allow="payment"
+                ></iframe>
+            </div>
+            
+        </div>
+    </main>
+
+</body>
+</html>
